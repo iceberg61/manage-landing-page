@@ -158,7 +158,7 @@ p[data-width="wide"] {max-width: 45.5ch;}
 }
 
 /* Navigation */
-.primary-header {padding-top: var(--size-70);}
+.primary-header {padding-top: var(--size-700);}
 
 .nav-wrapper {
   display: flex;
@@ -254,6 +254,11 @@ p[data-width="wide"] {max-width: 45.5ch;}
 
 .primary-footer-logo {grid-area: logo;}
 
+.primary-footer-nav {
+  grid-area: nav; 
+  display: flex;
+  justify-content: center;}
+
 .primary-footer--form {grid-area: form;}
 
 .primary-footer--copyright {
@@ -277,8 +282,10 @@ form input[type='email'] {
 
 @media (min-width: 50em) {
   .primary-footer-wrapper {
-    grid-template-areas: "logo nav form"
-    "social nav copyright"    ;
+    grid-template-areas: 
+    'logo nav form' 
+    'social nav copyright'
+    ;
     grid-template-columns: min-content 1fr auto;
   }
 
